@@ -49,13 +49,16 @@ class Main {
 
 		// Primeramente los horizontales
 		for(int i = pos-1; i >= 0; i--) {
-			// Si las columnas anteriores cuentan con la misma fila no se puede colocar ahi la reina
+			
+			// Verifica horizontalmente
 			if(chessBoard[i] == chessBoard[pos])
 				return false;
 
+			// Verifica la diagonal superior
 			if(chessBoard[i] == chessBoard[pos] - (pos - i))
 				return false;
 
+			// Verifica la diagonal inferior
 			if(chessBoard[i] == chessBoard[pos] + (pos - i))
 				return false;
 
@@ -98,7 +101,7 @@ class Main {
 				if(chessBoard[j] == i)
 					System.out.print("|X|");
 				else
-					System.out.print("|-|");
+					System.out.print("| |");
 			System.out.println();
 		}
 	}
