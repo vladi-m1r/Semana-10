@@ -1,5 +1,5 @@
 /*
- * Semana N°10
+ * Semana 10
  * 
  * Algoritmo para posicionar NReinas sin que se ataquen
  * Algoritmos que encuentra las x soluciones en un tablero de ajedrez
@@ -143,7 +143,7 @@ class Main {
 		}
 	}
 	
-	// Pos señala la columna en la que se esta iterando
+	// pos es la columna en la que se esta iterando
 	// Cuando la iteracion llegue a la ultima columna se verifica la permutacion realizada
 	private static void permutation(int pos, int [] chessBoard) {
 		for(int i = chessBoard[pos]; i < chessBoard.length; i++) {
