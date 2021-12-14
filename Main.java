@@ -6,6 +6,8 @@
  * Fuerza Bruta (FB) y Backtracking(BT)
  */
 
+// Documento: https://drive.google.com/file/d/1-kZWIaIpAV30Up8DvFfnc8B34uWrKMuR/view?usp=sharing
+
 class Main {
 
 	static int num_sol_bt = 0;
@@ -90,7 +92,8 @@ class Main {
 						row_index = 0;
 						column_index++;
 					}else {
-						// Aqui esta a punto de traspasar el column index, eso significa que hallo la solucion
+						// Aqui esta a punto de traspasar la longitud de columna maxima permitida
+						// Hallo la solucion
 						num_sol_bt++;
 						row_index++;
 					}
