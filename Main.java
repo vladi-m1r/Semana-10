@@ -15,7 +15,7 @@ class Main {
 	
 	public static void main(String[] args) {
 		// Test 30 items
-		int time_test = 10;
+		int time_test = 9;
 		testTimeBT(time_test);
 		testTimeFB(time_test);
 	}
@@ -27,7 +27,7 @@ class Main {
 			long time = System.nanoTime();
 			nQueensFB(i);
 			time = System.nanoTime() - time;
-			System.out.println("Tamaño: " + i + "\t" + "Tiempo: " + time+ "\t" + "N° Soluciones: " + num_sol_fb);
+			System.out.println("Size: " + i + "\t" + "Time: " + time+ "\t" + "N_Solutions: " + num_sol_fb);
 			num_sol_fb = 0;
 		}
 	}
@@ -39,7 +39,7 @@ class Main {
 			long time = System.nanoTime();
 			nQueens(i);
 			time = System.nanoTime() - time;
-			System.out.println("Tamaño: " + i + "\t" + "Tiempo: " + time + "\t" + "N° Soluciones: " + num_sol_bt);
+			System.out.println("Size: " + i + "\t" + "Time: " + time + "\t" + "N_Solutions: " + num_sol_bt);
 			num_sol_bt = 0;
 		}
 	}
